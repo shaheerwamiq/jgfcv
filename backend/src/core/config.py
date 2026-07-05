@@ -19,7 +19,7 @@ class Settings(BaseSettings):
     llm_model: str = "gemini-2.5-flash"
     llm_temperature: float = 0.3
     llm_max_retries: int = 3
-    embedding_model: str = "models/embedding-001"
+    embedding_model: str = "models/gemini-embedding-001"
 
     # --- RAG ---
     chunk_size: int = 800
