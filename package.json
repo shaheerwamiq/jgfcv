@@ -1,0 +1,9 @@
+{
+  "name": "agentforge",
+  "private": true,
+  "scripts": {
+    "dev": "node dev.mjs",
+    "build": "npm --prefix frontend run build",
+    "test": "cd backend && uv run pytest -q"
+  }
+}
