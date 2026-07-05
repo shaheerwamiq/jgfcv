@@ -27,7 +27,7 @@ Keyword search misses meaning ("reset password" vs. "can't log in"). Embeddings 
 
 ## Alternatives
 - **Local sentence-transformers** (course notes' choice) — free, private, but needs torch (~2 GB), unsuitable for serverless.
-- **API embeddings** (Gemini `embedding-001`, OpenAI `text-embedding-3-*`) — no local model weight, per-call cost. **AgentForge uses Gemini embeddings for this reason** — documented trade-off.
+- **API embeddings** (Gemini `gemini-embedding-001`, OpenAI `text-embedding-3-*`) — no local model weight, per-call cost. **AgentForge uses Gemini embeddings for this reason** — documented trade-off.
 - **BM25 / keyword search** — still excellent; hybrid (BM25 + vectors) often beats either alone.
 
 ## Common beginner mistakes

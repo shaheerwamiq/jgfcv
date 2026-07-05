@@ -28,7 +28,7 @@ Recursive = tries `\n\n`, then `\n`, then `" "`, then chars — respects structu
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 
-emb = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+emb = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 store = FAISS.from_documents(chunks, emb)
 store.save_local("index/")                       # FAISS is manual-persistence
 store = FAISS.load_local("index/", emb, allow_dangerous_deserialization=True)
